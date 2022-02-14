@@ -9,13 +9,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <style>
-        .rounded-img {
-            width: 60%;
+        .card {
+            border-radius: 1em;
+            text-align: center;
+        }
+
+        .card:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
             border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-            padding: 0.3em;
-            margin-bottom: 1em;
+            width: 60%;
+            margin: auto;
+            padding: 1em;
         }
     </style>
     <title>My favorite places</title>
@@ -25,7 +37,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand p-0" href="/"><img src="logo.png" alt="logo" width="100"></a>
+            <a class="navbar-brand p-0" href="/"><img src="/img/logo.png" alt="logo" width="100"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -47,16 +59,15 @@
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
             <div class="col">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1565704927742-7fae2c6f7630?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                        class="card-img-top" alt="Norway">
+                    <img src="/img/norway.jpg" class="card-img-top" alt="Norway">
                     <div class="card-body">
                         <h5 class="card-title">Norway</h5>
                         <p class="card-text">Norway (Bokmal Norge, Nynorsk Noreg), the official name is
                             the Kingdom of Norway (Bokmal Kongeriket Norge, Nynorsk Kongeriket Noreg) is a state in
                             Northern Europe, located in the western part of the Scandinavian Peninsula and on a huge
-                            number of adjacent small islands, as well as an archipelago Spitsbergen (Svalbard), Jan
-                            Mayen and Bear Islands in the Arctic Ocean.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                            number of adjacent small islands.</p>
+                        <a href="https://images.unsplash.com/photo-1565704927742-7fae2c6f7630?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                            class="btn btn-success" target="_blank">Large Photo</a>
                     </div>
                 </div>
             </div>
@@ -64,31 +75,30 @@
 
             <div class="col">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                        class="card-img-top" alt="New York">
+                    <img src="/img/newy.jpg" class="card-img-top" alt="New York">
                     <div class="card-body">
                         <h5 class="card-title">New York</h5>
                         <p class="card-text">New York is the largest city in the United States, part of one of the
                             largest agglomerations in the world. New York is located on the Atlantic Ocean in
                             southeastern New York State. The city was founded in the early 17th century by Dutch
                             colonists and was called New Amsterdam until 1664.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                            class="btn btn-success" target="_blank">Large Photo</a>
                     </div>
                 </div>
             </div>
 
             <div class="col">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1627245084666-199325217d5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=691&q=80"
-                        class="card-img-top" alt="London">
+                    <img src="/img/london.jpg" class="card-img-top" alt="London">
                     <div class="card-body">
                         <h5 class="card-title">London</h5>
                         <p class="card-text">London is the capital and largest city of the United Kingdom of Great
                             Britain and Northern Ireland. Administratively, it forms the Greater London region of
                             England, divided into 33 self-governing territories. Located in the southeast of the island
-                            of Great Britain, on a plain at the mouth of the Thames, near the North Sea. The main
-                            political, economic and cultural center of the United Kingdom.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                            of Great Britain.</p>
+                        <a href="https://images.unsplash.com/photo-1627245084666-199325217d5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=691&q=80"
+                            class="btn btn-success" target="_blank">Large Photo</a>
                     </div>
                 </div>
             </div>
